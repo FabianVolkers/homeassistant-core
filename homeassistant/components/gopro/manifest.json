@@ -1,0 +1,13 @@
+{
+  "domain": "gopro",
+  "name": "GoPro Camera",
+  "config_flow": true,
+  "documentation": "https://www.home-assistant.io/integrations/gopro",
+  "requirements": ["goprocam==4.2.0"],
+  "ssdp": [],
+  "zeroconf": [],
+  "homekit": {},
+  "dependencies": [],
+  "codeowners": ["@FabianVolkers"],
+  "iot_class": "local_polling"
+}

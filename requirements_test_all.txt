@@ -606,6 +606,9 @@ google-nest-sdm==2.1.0
 # homeassistant.components.google_travel_time
 googlemaps==2.5.1
 
+# homeassistant.components.gopro
+goprocam==4.2.0
+
 # homeassistant.components.govee_ble
 govee-ble==0.19.3
 

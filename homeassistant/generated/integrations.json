@@ -2040,6 +2040,12 @@
         }
       }
     },
+    "gopro": {
+      "name": "GoPro Camera",
+      "integration_type": "hub",
+      "config_flow": true,
+      "iot_class": "local_polling"
+    },
     "govee_ble": {
       "name": "Govee Bluetooth",
       "integration_type": "hub",

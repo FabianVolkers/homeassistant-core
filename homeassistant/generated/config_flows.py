@@ -158,6 +158,7 @@ FLOWS = {
         "google_assistant_sdk",
         "google_sheets",
         "google_travel_time",
+        "gopro",
         "govee_ble",
         "gpslogger",
         "gree",
