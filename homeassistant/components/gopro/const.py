@@ -3,3 +3,4 @@
 DOMAIN = "gopro"
 GOPRO = "gopro"
 GOPRO_INFO = "gopro_info"
+DATA_FFMPEG = "ffmpeg"

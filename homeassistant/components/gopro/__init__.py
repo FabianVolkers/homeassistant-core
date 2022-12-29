@@ -18,7 +18,7 @@ _LOGGER = logging.getLogger(__name__)
 
 
 def _init_gopro_device(device):
-    return device.status("isConnected"), device.infoCamera()
+    return device.getStatus("status", "31"), device.infoCamera()
 
 
 async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:

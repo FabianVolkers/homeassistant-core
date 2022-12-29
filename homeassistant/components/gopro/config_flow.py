@@ -20,13 +20,14 @@ STEP_USER_DATA_SCHEMA = vol.Schema(
     {
         vol.Required("name"): str,
         vol.Required("ip", default="10.5.5.9"): str,
+        vol.Required("stream_address"): str,
     }
 )
 
 
 def _check_device(device):
     """Verify we can connect to the device and return the status."""
-    return device.getStatus("isConnected"), device.infoCamera()
+    return device.getStatus("status", "31"), device.infoCamera()
 
 
 async def validate_input(hass: HomeAssistant, data: dict[str, Any]) -> dict[str, Any]:
@@ -49,9 +50,10 @@ async def validate_input(hass: HomeAssistant, data: dict[str, Any]) -> dict[str,
 
     # Return info that you want to store in the config entry.
     return {
-        "title": data["name"],
+        "name": data["name"],
         "ip_address": data["ip"],
-        "mac_addr": info["MacAddress"],
+        "mac_addr": info["ap_mac"],
+        "input": data["stream_address"],
     }
 
 
